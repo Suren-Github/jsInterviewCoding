@@ -39,7 +39,9 @@
 ## Core React
 
 1.  ### A method to check if the input is a palindrome.
-	// https://jsfiddle.net/Kubo777/skpbyovr/
+
+    ```jsx harmony
+    // https://jsfiddle.net/Kubo777/skpbyovr/
     const isPalindrome = (word) => {
 	  if(typeof word !== 'string'){
 		console.log('Enter a string', typeof word);
@@ -55,76 +57,9 @@
 
 	isPalindrome('racecars'); // It's not
 	isPalindrome('racecar'); // It's a palindrome
-
-    **[⬆ Back to Top](#table-of-contents)**
-
-2. ### What is the history behind React evolution?
-    The history of ReactJS started in 2010 with the creation of **XHP**. XHP is a PHP extension which improved the syntax of the language such that XML document fragments become valid PHP expressions and the primary purpose was used to create custom and reusable HTML elements. 
+    ```
     
-    The main principle of this extension was to make front-end code easier to understand and to help avoid cross-site scripting attacks. The project was successful to prevent the malicious content submitted by the scrubbing user.
-
-    But there was a different problem with XHP in which dynamic web applications require many roundtrips to the server, and XHP did not solve this problem. Also, the whole UI was re-rendered for small change in the application. Later, the initial prototype of React is created with the name **FaxJ** by Jordan inspired from XHP. Finally after sometime React has been introduced as a new library into JavaScript world.
-
-    **Note:** JSX comes from the idea of XHP
-
-    **[⬆ Back to Top](#table-of-contents)**
-    
-2.  ### What are the major features of React?
-
-    The major features of React are:
-
-    - Uses **JSX** syntax, a syntax extension of JS that allows developers to write HTML in their JS code.
-    - It uses **Virtual DOM** instead of Real DOM considering that Real DOM manipulations are expensive.
-    - Supports **server-side rendering** which is useful for Search Engine Optimizations(SEO).
-    - Follows **Unidirectional or one-way** data flow or data binding.
-    - Uses **reusable/composable** UI components to develop the view.
-
-    **[⬆ Back to Top](#table-of-contents)**
-
-3.  ### What is JSX?
-
-    _JSX_ stands for _JavaScript XML_ and it is an XML-like syntax extension to ECMAScript. Basically it just provides the syntactic sugar for the `React.createElement(type, props, ...children)` function, giving us expressiveness of JavaScript along with HTML like template syntax.
-
-    In the example below, the text inside `<h1>` tag is returned as JavaScript function to the render function.
-
-    ```jsx harmony
-    export default function App() {
-      return (
-          <h1 className="greeting">{"Hello, this is a JSX Code!"}</h1>
-      );
-    }
-    ```
-    If you don't use JSX syntax then the respective JavaScript code should be written as below,
-
-    ```javascript
-    import { createElement } from 'react';
-
-    export default function App() {
-      return createElement(
-        'h1',
-        { className: 'greeting' },
-        'Hello, this is a JSX Code!'
-      );
-    }
-    ```
-
-     <details><summary><b>See Class</b></summary>
-     <p>
-
-    ```jsx harmony
-    class App extends React.Component {
-      render() {
-        return (
-            <h1 className="greeting">{"Hello, this is a JSX Code!"}</h1>
-        );
-      }
-    }
-    ```
-
-     </p>
-     </details>
-
-    **Note:** JSX is stricter than HTML
+	**Note:** JSX is stricter than HTML
 
     **[⬆ Back to Top](#table-of-contents)**
 
