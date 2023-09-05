@@ -26,11 +26,14 @@
 |     | **Core React**                                                                                                                                                                                                                   
 | 1   | [A method to check if the input is a palindrome.] |
 (#A-method-to-check-if-the-input-is-a-palindrome)                                                                                                                                                                                                 |
-| 2   | [Find the minimum and maximum element in an array.](#find-the-minimum-and-maximum-element-in-an-array)                                                                                                                      |
+| 2   | [Find the minimum and maximum element in an array.] | 
+    (#find-the-minimum-and-maximum-element-in-an-array)        |
 
-| 3   | [Write a program to reverse the array.](#Write-a-program-to-reverse-the-array)     |
+| 3   | [Write a program to reverse the array.] |
+    (#Write-a-program-to-reverse-the-array)     |
 
-| 4   | [Find the occurrence of an integer in the array.](#Find the occurrence of an integer in the   array)                                                                                                                   |
+| 4   | [Find the occurrence of an integer in the array.]   | 
+(#Find the occurrence of an integer in the array)           |
 | 5   | [Sort the array.](#sort-the-array)                                                                                                                                                         |
 | 6   | [When to use a Class Component over a Function Component?](#when-to-use-a-class-component-over-a-function-component)                                                                                                             |
 | 7   | [What are Pure Components?](#what-are-pure-components)                                                                                                                                                                           |
@@ -123,7 +126,7 @@
   
   revArray();
   revArray2();
-  
+
   ```
   **[⬆ Back to Top](#table-of-contents)**
 
