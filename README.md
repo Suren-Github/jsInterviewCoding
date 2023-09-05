@@ -121,9 +121,9 @@
     console.log(reversedArr);
   }
   
- 
   revArray();
   revArray2();
+  
   ```
   **[⬆ Back to Top](#table-of-contents)**
 
@@ -148,17 +148,17 @@
 
     ```jsx harmony
     // [Fiddle](https://jsfiddle.net/Kubo777/ub2qx9ws/4/)
-  const arr = [1, 4, 7, 3, 2];
+    const arr = [1, 4, 7, 3, 2];
 
-  const sortTheArrayAsc = () => {
-    return arr.sort((a, b)=> a - b);
-  }
-  console.log(sortTheArrayAsc()); // [1, 2, 3, 4, 7]
+    const sortTheArrayAsc = () => {
+      return arr.sort((a, b)=> a - b);
+    }
+    console.log(sortTheArrayAsc()); // [1, 2, 3, 4, 7]
 
-  const sortTheArrayDesc = () => {
-    return arr.sort((a, b)=> a - b);
-  }
-  console.log(sortTheArrayDesc()); // [7, 4, 3, 2, 1]
+    const sortTheArrayDesc = () => {
+      return arr.sort((a, b)=> a - b);
+    }
+    console.log(sortTheArrayDesc()); // [7, 4, 3, 2, 1]
 
     ```
     
