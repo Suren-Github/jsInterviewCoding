@@ -65,8 +65,6 @@
 	isPalindrome('racecar'); // It's a palindrome
     ```
     
-	**Note:** JSX is stricter than HTML
-
     **[⬆ Back to Top](#table-of-contents)**
 
 2. ### Find the minimum and maximum element in an array.
@@ -143,8 +141,6 @@
     console.log(findTheInteger()); // [3]
     ```
     
-	**Note:** JSX is stricter than HTML
-
   **[⬆ Back to Top](#table-of-contents)**
 
 5.  ### Sort the array.
@@ -165,8 +161,6 @@
 
     ```
     
-	**Note:** JSX is stricter than HTML
-
   **[⬆ Back to Top](#table-of-contents)**
 
 6.  ### Convert multi dimensional array into a single array.
