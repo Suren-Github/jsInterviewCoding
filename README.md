@@ -35,7 +35,7 @@
 | 4   | [Find the occurrence of an integer in the array.]   | 
 (#Find the occurrence of an integer in the array)           |
 | 5   | [Sort the array.](#sort-the-array)                                                                                                                                                         |
-| 6   | [When to use a Class Component over a Function Component?](#when-to-use-a-class-component-over-a-function-component)                                                                                                             |
+| 6   | [Get only the unique values in an array](#get-only-the-unique-values-in-an-array)                                                                                                             |
 | 7   | [What are Pure Components?](#what-are-pure-components)                                                                                                                                                                           |
 | 8   | [What is state in React?](#what-is-state-in-react)                                                                                                                                                                               |
 | 9   | [What are props in React?](#what-are-props-in-react)                                                                                                                                                                             |
@@ -163,26 +163,17 @@
     
   **[⬆ Back to Top](#table-of-contents)**
 
-6.  ### Convert multi dimensional array into a single array.
+6.  ### Get only the unique values in an array.
 
     ```jsx harmony
     // [Fiddle](https://jsfiddle.net/Kubo777/pc5t4qu1/15/)
-    const isPalindrome = (word) => {
-	  if(typeof word !== 'string'){
-		console.log('Enter a string', typeof word);
-		return;
+    const uniqueValues = (arr) => {
+        console.log([...new Set(arr)]);
 	  }
 
-	  if(word.split('').reverse('').join('') === word) {
-		console.log('It\'s a palindrome');
-	  } else {
-		console.log('It\'s not');
-	  }
-	}
-
-	isPalindrome('racecars'); // It's not
-	isPalindrome('racecar'); // It's a palindrome
-    ```
+	  uniqueValues([1, 3, 4, 5, 3, 4, 5]); // It's not
+  
+      ```
     
 	**Note:** JSX is stricter than HTML
 
