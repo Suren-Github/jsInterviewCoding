@@ -6,3 +6,7 @@ class Solution(object):
             s[l], s[r] = s[r], s[l]
             l, r = l+1, r-1
             
+
+
+#Input: s = ["h","e","l","l","o"]
+#Output: ["o","l","l","e","h"]
