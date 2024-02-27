@@ -1,27 +1,24 @@
 const maxProfit = (prices) => {
-    const minVal = Math.min(...prices);
-    const minIndex = prices.findIndex((currVal) => currVal === minVal);
+  const minVal = Math.min(...prices);
+  const minIndex = prices.findIndex((currVal) => currVal === minVal);
 
-    const maxVal = Math.max(...prices);
-    const maxIndex = prices.findIndex((currVal) => currVal === maxVal);
-    debugger
-    if (maxIndex > minIndex) {
-        return maxVal - minVal;
-    } else if (maxIndex === minIndex) {
-        return 0;
-    } else if (maxIndex < minIndex) {
-        prices.splice(maxIndex, 1);
-        maxProfit(prices);
-    } else if (minIndex === prices.length - 1) {
-        prices.splice(minIndex, 1);
-        maxProfit(prices);
-    } 
+  const maxVal = Math.max(...prices);
+  const maxIndex = prices.findIndex((currVal) => currVal === maxVal);
+
+  if (maxIndex > minIndex) {
+      return maxVal - minVal;
+  } else if (maxIndex === minIndex) {
+      return 0;
+  } else if (maxIndex < minIndex) {
+      prices.splice(maxIndex, 1);
+      return maxProfit(prices);
+  } else if (minIndex === prices.length - 1) {
+      prices.splice(minIndex, 1);
+      return maxProfit(prices);
+  }
 }
 
-maxProfit([4, 1, 2]);
-
-maxProfit([2, 4, 1]);
-
+// Problem with [2, 4, 1]
 
 
 // algm2
