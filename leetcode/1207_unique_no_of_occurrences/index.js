@@ -9,5 +9,6 @@ var uniqueOccurrences = function (arr) {
         occurrence[arr[l]] = occurrence[arr[l]] ? occurrence[arr[l]] + 1 : 1;        
         l++;
     }
+    
     return new Set([...Object.values(occurrence)]).size == Object.keys(occurrence).length;
 };
